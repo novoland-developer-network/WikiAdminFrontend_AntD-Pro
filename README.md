@@ -1,2 +1,2 @@
 # WikiAdminFrontend_AntD-Pro
-使用AntD-Pro开发的九州第一群开放平台资料库系统后台前端库
+基于AntD-Pro开发的九州开放平台资料库WIKI系统前端库
