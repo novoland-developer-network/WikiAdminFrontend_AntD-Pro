@@ -24,32 +24,106 @@ export default [
     Routes: ['src/pages/Authorized'],
     routes: [
       // dashboard
-      { path: '/', redirect: '/dashboard/analysis', authority: ['admin', 'user'] },
       {
-        path: '/dashboard',
+        path: '/',
+        redirect: '/dashboard/workplace',
+        authority: ['admin', 'user'],
+      },
+      {
+        path: '/dashboard/workplace',
+        hideInMenu: true,
         name: 'dashboard',
         icon: 'dashboard',
+        // component:'./Dashboard/Workplace',
         routes: [
           {
             path: '/dashboard/analysis',
+            hideInMenu: true,
             name: 'analysis',
             component: './Dashboard/Analysis',
           },
           {
             path: '/dashboard/monitor',
+            hideInMenu: true,
             name: 'monitor',
             component: './Dashboard/Monitor',
           },
           {
             path: '/dashboard/workplace',
+            hideInMenu: true,
             name: 'workplace',
             component: './Dashboard/Workplace',
           },
         ],
       },
+      {
+        path: '/dynasty',
+        icon: 'read',
+        name: 'dynasty',
+        routes: [
+          {
+            name: 'dynasty-list',
+            path: '/dynasty/list',
+            component: './List/TableList',
+          },
+          {
+            name: 'dynasty-add',
+            path: '/dynasty/add',
+            component: './Forms/BasicForm',
+          },
+        ],
+      },
+      {
+        name: 'hero',
+        icon: 'user',
+        path: '/hero',
+        routes: [
+          {
+            name: 'hero-list',
+            path: '/hero/list',
+            component: './List/TableList',
+          },
+          {
+            name: 'hero-add',
+            path: '/hero/add',
+            component: './Forms/BasicForm',
+          },
+        ],
+      },
+      {
+        name: 'geography',
+        icon: 'heat-map',
+        path: '/geography',
+        component: './List/TableList',
+      },
+      {
+        name: 'camp',
+        icon: 'team',
+        path: 'camp',
+        component: './List/TableList',
+      },
+      {
+        name: 'weapon',
+        icon: 'close',
+        path: 'weapon',
+        component: './List/TableList',
+      },
+      {
+        name: 'races',
+        icon: 'flag',
+        path: 'races',
+        component: './List/TableList',
+      },
+      {
+        name: 'event',
+        icon: 'iconfire-copy',
+        path: 'event',
+        component: './List/TableList',
+      },
       // forms
       {
         path: '/form',
+        hideInMenu: true,
         icon: 'form',
         name: 'form',
         routes: [
@@ -96,6 +170,7 @@ export default [
       // list
       {
         path: '/list',
+        hideInMenu: true,
         icon: 'table',
         name: 'list',
         routes: [
@@ -145,6 +220,7 @@ export default [
       {
         path: '/profile',
         name: 'profile',
+        hideInMenu: true,
         icon: 'profile',
         routes: [
           // profile
@@ -169,6 +245,7 @@ export default [
       },
       {
         name: 'result',
+        hideInMenu: true,
         icon: 'check-circle-o',
         path: '/result',
         routes: [
@@ -183,6 +260,7 @@ export default [
       },
       {
         name: 'exception',
+        hideInMenu: true,
         icon: 'warning',
         path: '/exception',
         routes: [
@@ -212,6 +290,7 @@ export default [
       },
       {
         name: 'account',
+        hideInMenu: true,
         icon: 'user',
         path: '/account',
         routes: [
@@ -270,6 +349,7 @@ export default [
       //  editor
       {
         name: 'editor',
+        hideInMenu: true,
         icon: 'highlight',
         path: '/editor',
         routes: [

@@ -1,9 +1,30 @@
 export default {
-  'menu.home': '首页',
+  'menu.home': '遍览',
+
+  // 'menu.mine':'我的',
+  'menu.dashboard': '我的',
+
+  'menu.dynasty': '千秋',
+  'menu.dynasty.dynasty-list': '纵观',
+  'menu.dynasty.dynasty-add': '怀古',
+
+  'menu.hero': '千面',
+  'menu.hero.hero-list': '知命',
+  'menu.hero.hero-add': '立身',
+
+  'menu.geography': '江山',
+
+  'menu.camp': '群雄',
+
+  'menu.weapon': '名器',
+
+  'menu.races': '七族',
+
+  'menu.event': '事纪',
+
   'menu.login': '登录',
   'menu.register': '注册',
   'menu.register.result': '注册结果',
-  'menu.dashboard': 'Dashboard',
   'menu.dashboard.analysis': '分析页',
   'menu.dashboard.monitor': '监控页',
   'menu.dashboard.workplace': '工作台',
